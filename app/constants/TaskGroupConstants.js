@@ -1,7 +1,7 @@
 /**
  * @Author : HungBV
  */
-var BASE_URL = 'http://localhost:3000';
+var BASE_URL = 'http://52.7.204.16';
 export default {
 	BASE_URL: BASE_URL,
   	API_URL: BASE_URL + '/api/taskGroup',
