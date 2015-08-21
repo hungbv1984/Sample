@@ -12,7 +12,6 @@ class TaskService {
     request({
       url: API_GET_ALL_URL,
       method: 'GET',
-      crossOrigin: true,
       data: {groupId : taskGroup.id}
     })
     .then(function(response) {
@@ -24,7 +23,6 @@ class TaskService {
     request({
       url: API_URL,
       method: 'POST',
-      crossOrigin: true,
       data: {groupId : taskGroup.id}
     })
     .then(function(response) {
@@ -36,7 +34,6 @@ class TaskService {
     request({
       url: API_URL,
       method: 'DELETE',
-      crossOrigin: true,
       data: {taskId : taskId}
     })
     .then(function(response) {
@@ -48,7 +45,6 @@ class TaskService {
     request({
       url: API_URL,
       method: 'PUT',
-      crossOrigin: true,
       data: {json : JSON.stringify(task)}
     })
     .then(function(response) {

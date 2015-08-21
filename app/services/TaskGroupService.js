@@ -10,8 +10,7 @@ class TaskGroupService {
   getAll() {
     request({
       url: API_URL,
-      method: 'GET',
-      crossOrigin: true
+      method: 'GET'
     })
     .then(function(response) {
       TaskGroupActions.getAll(response);
@@ -21,8 +20,7 @@ class TaskGroupService {
   create() {
     request({
       url: API_URL,
-      method: 'POST',
-      crossOrigin: true
+      method: 'POST'
     })
     .then(function(response) {
       TaskGroupActions.create(response);
@@ -33,7 +31,6 @@ class TaskGroupService {
     request({
       url: API_URL,
       method: 'DELETE',
-      crossOrigin: true,
       data: {json : JSON.stringify(taskGroup)}
     })
     .then(function(response) {
@@ -45,7 +42,6 @@ class TaskGroupService {
     request({
       url: API_URL,
       method: 'PUT',
-      crossOrigin: true,
       data: {json : JSON.stringify(taskGroup)}
     })
     .then(function(response) {
