@@ -1,6 +1,6 @@
 ReactJS + Express + NodeJS Example
 # Installing
-npm install
+npm install<br>
 npm install --global babel
 
 # Generate Bundle script.
