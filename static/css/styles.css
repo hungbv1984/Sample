@@ -1,0 +1,160 @@
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden!important;
+  overflow-y: hidden!important;
+}
+
+html, body
+{
+    height: 100%;
+    min-width: 555px;
+}
+
+#header {
+  height: 56px;
+  border-bottom: 1px solid #e4e5e7;
+  background: #f7f9fa;
+  position: absolute;
+  width: 100%;
+}
+
+.header-link {
+  padding: 18px 26px 17px 26px;
+  font-size: 14px;
+  float: left;
+  border-left: 1px solid #e4e5e7;
+  background: #f7f9fa;
+  cursor: pointer;
+}
+
+.header-link:hover {
+  background: #f1f4f6;
+}
+
+.floatR {
+  float: right;
+}
+
+.content {
+  min-width: 320px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 90px 20px 20px 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.panel {
+  margin-bottom:  1px rgba(0,0,0,0.05);
+  width: 350px;
+  height: 100%;
+  margin: 0 10px;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+}
+.icon-delete-header:before {
+    content: "\f014";
+}
+
+.icon-edit-header:before {
+    content: "\f044";
+}
+
+.icon-add-header:before {
+  content: "\f067";
+}
+
+.icon-header {
+    background-clip: content-box;
+    background-origin: content-box;
+    padding: 4px;
+    top: 0;
+    right: 0;
+    float:right;
+}
+
+.h100p {
+    height: 100%;
+}
+
+.TaskGroups-enter {
+  opacity: 0.01;
+  transition: opacity .5s ease-in;
+}
+
+.TaskGroups-enter.TaskGroups-enter-active {
+  opacity: 1;
+}
+
+.TaskGroups-leave {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.TaskGroups-leave.TaskGroups-leave-active {
+  opacity: 0.01;
+}
+
+div.editing .edit {
+  display: block;
+  margin-bottom:  1px rgba(0,0,0,0.05);
+  width: 350px;
+  height: 45px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #f5f5f5;
+}
+
+li.editing .edit {
+  display: block;
+  margin-bottom:  1px rgba(0,0,0,0.05);
+  width: 285px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #f5f5f5;
+  top:0;
+  resize : vertical;
+}
+
+div.view {
+  white-space: pre;
+}
+
+.editing .view {
+  display: none;
+}
+
+div.editing {
+    border-bottom: none;
+    padding: 0;
+}
+
+div .hideEdit {
+  display: none;
+}
+
+.panel-body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  max-height: 100%;
+  display: block;
+  word-break:break-all;
+}
+
+.list-group {
+overflow: auto;
+bottom: 20px;
+}
